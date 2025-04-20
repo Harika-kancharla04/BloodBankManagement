@@ -1,0 +1,137 @@
+/* index.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+#header {
+    background: #d32f2f;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+.contents {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffebee;
+}
+
+.echi-padedham {
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.echi-padedham .me {
+    font-size: 28px;
+    line-height: 1.4;
+    color: #fff;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#about {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-col-1 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-col-2 {
+    flex: 1;
+}
+
+.about-col-2 h1.happy {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #b71c1c;
+}
+
+.about-col-2 p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.constact {
+    background-color: #fce4ec;
+    padding: 40px 20px;
+}
+
+.constact h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.constact h3 pre {
+    font-size: 18px;
+    color: #880e4f;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .contents {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .echi-padedham .me {
+        font-size: 22px;
+    }
+}
